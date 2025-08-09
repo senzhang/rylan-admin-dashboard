@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --radius: 0.75rem; }
+html, body, #root { height: 100%; }
+body { @apply bg-background text-foreground antialiased; }
+.container { @apply max-w-7xl mx-auto px-4; }
+.toast { @apply fixed right-4 top-4 z-50 space-y-2; }
+.toast-item { @apply rounded-md border px-3 py-2 bg-white dark:bg-zinc-900 dark:border-zinc-700 shadow; }
